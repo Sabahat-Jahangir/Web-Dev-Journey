@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="/01- HTML/action_file.php" target="_blank">
+        <fieldset>
+            <legend>Persona</legend>
+        <div>
+            <label for="fname">First Name:</label>
+        </div>
+        <div>
+            <input type="text" id="fname" name="fname">
+        </div>
+        <div>
+            <label for="lname">Last Name:</label>
+        </div>
+        <div>
+            <input type="text" id="lname" name="lname" 
+        </div><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <p>Choose your favorite Islamic Speaker:</p>
+    <form>
+        <input type="radio" id="MTJ" name="fav_speaker" value="MTJ">
+        <label for="MTJ">Maulana Tariq Jameel</label><br>
+        <input type="radio" id="MTM" name="fav_speaker" value="MTM">
+        <label for="MTM">Mufti Tariq Massood</label><br>
+        <input type="radio" id="DIA" name="fav_speaker" value="DIA">
+        <label for="DIA">Dr. Israr Ahmad</label>
+    </form>
+    <br>
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+    </form>
+
+    <label for="brand">Choose a shoe brand</label>
+    <select id="brand" name="brand">
+        <option value="Borjan">Borjan</option>
+        <option value="Bata">Bata</option>
+        <option value="Stylo">Stylo</option>
+        <option value="ECS">ECS</option>
+        <option value="Ndure">Ndure</option>
+        <option value="Servis">Servis</option>
+    </select><br>
+
+</body>
+
+</html>
+
+<textarea name="message" rows="10" cols="30">
+Assalamoalaikum
+</textarea><br>
+
+<button type="button" onclick="alert('Assalamoalaikum!')">Greetings</button>
