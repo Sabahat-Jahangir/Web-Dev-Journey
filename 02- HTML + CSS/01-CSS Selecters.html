@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: yellow;
+        }
+        /* Class Selectors */
+        .red{
+            background-color: red;
+        }
+        /* Id selectors */
+        #love{
+            background-color: thistle;
+        }
+        /* Child Selectors */
+        div > p {
+            color:aqua;
+            background-color: black;
+        }
+        /* Desendant Selectors */
+        div p{
+            color:blueviolet;
+            background-color: azure;
+        }
+        /* Universal Selectors */
+        * {
+            margin:0;
+            padding:0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color:thistle;
+        }
+        a:link {/* A link that has not been visited yet */
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: thistle;
+        }
+
+        p:first-child{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="love">
+        Assalamoalaikum, I am Pakistani div
+    </div>
+    <div class="red">
+        Hello, I am American div
+        <article>
+            <p>Heloooooo</p>
+        </article>
+    </div>
+    <div>
+        Namasty, I am Indian div
+        <p>Hello World</p>
+    </div>
+    <div>
+        <a href="https://www.google.com"> Go to google</a>
+        <a href="https://www.facebook.com"> Go to facebook</a>
+    </div>
+    <main class="one">
+        <p>I am First Child</p>
+        <p>I am Second Child</p>
+    </main>
+</body>
+</html>
