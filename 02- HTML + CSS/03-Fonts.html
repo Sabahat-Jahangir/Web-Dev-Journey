@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts & Text Properties</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-decoration: overline;
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Tahoma, Geneva, Verdana, sans-serif : these are the fallback fonts means if Segoe UI is not available then we use the fallback fonts*/
+            font-style: oblique;
+            font-weight: bold;
+            text-decoration: underline;
+            line-height: 1.2;
+            /* letter-spacing: 5px; */
+
+        }
+
+        div {
+            font-family: "Roboto Condensed", sans-serif;
+        }
+        h2{
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color: rgb(207, 207, 48);
+            text-decoration-style: wavy;
+            text-decoration-thickness: 5px;
+            text-indent: 50px;
+            text-overflow: clip;
+        }
+        .lorem{
+            border: 2px solid salmon;
+            text-overflow: clip;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <div>
+            I am div
+        </div>
+        <p>This is the practice of fonts</p>
+        <h2>
+            About fonts
+        </h2>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis cupiditate voluptates eaque, fuga similique nisi quod possimus odit sed autem maiores facere voluptatum, facilis hic natus tempore quibusdam ipsum architecto soluta. Quisquam blanditiis cupiditate dolores unde harum vitae eaque inventore, ullam quaerat doloribus sint!</p>
+    </div>
+</body>
+
+</html>
