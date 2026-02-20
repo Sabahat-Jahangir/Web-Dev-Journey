@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Task 5</title>
+    <link rel="stylesheet" href="Task5_style.css">
+</head>
+
+<body>
+
+    <div class="form-container animate-form">
+        <h2>Course Registration</h2>
+
+        <form>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Username:</label>
+            <input type="text" placeholder="Username*" required>
+
+            <label>Password:</label>
+            <input type="password" placeholder="Password*" required>
+
+            <label>Contact No:</label>
+            <input type="text" pattern="[0-9]{11}" required>
+
+            <label>Email ID:</label>
+            <input type="email" required>
+
+            <label>Course:</label>
+            <select required>
+                <option>-- Select --</option>
+                <option>Web Development</option>
+                <option>AI</option>
+                <option>Database</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

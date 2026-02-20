@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <style>
+        body{
+            background-color: #e0e0e0;
+            font-family: Arial, Helvetica, sans-serif ;
+        }
+        .form-container{
+            background-color: #52a7e0;
+            border-radius: 6px ;
+            width: 450px;
+            padding: 30px;
+            margin: 50px auto;
+            box-shadow: 3px 3px 10px black;
+        }
+        h2{
+            text-align: center;
+            color: black;
+        }
+        label{
+           display: block; 
+           margin-top: 10px;
+           color: black;
+           font-weight: bold;
+        }
+        input, select{
+            width: 90%;
+            padding: 7px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: none;
+        }
+        button{
+            width: 100px;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #d93515;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Course Registration</h2>
+        <form action="">
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" placeholder="Enter your name*" required ><br><br>
+            <label for="Username">Username:</label>
+            <input type="text" name="Username" id="Username" placeholder="Username*" required><br><br>
+            <label for="Pwd">Password:</label>
+            <input type="password" placeholder="Password*" id="Pwd" name="Pwd" required><br><br>
+
+            <label for="Contact">Contact No:</label>
+            <input type="text" placeholder="Contact No*" name="Contact" id="Contact" pattern="[0-9]{11}" title="Contact Number must be exactly 11 digits (0-9)"><br><br>
+
+            <label for="email">Email ID</label>
+            <input type="email" name="email" id="email" placeholder="Email ID*" required><br><br>
+
+            <label for="Course">Course:</label>
+            <select name="Course" id="Course">
+                <option value="5">-- Select --</option>
+                <option value="1">Web Development</option>
+                <option value="2">Artifical Intelligence</option>
+                <option value="3">Database Systems</option>
+                <option value="4">Cyber Security</option>
+                
+            </select> <br><br><br>
+            <button type="submit">Submit</button>
+
+
+            
+        </form>
+    </div>
+</body>
+</html>

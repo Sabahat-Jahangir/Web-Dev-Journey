@@ -1,0 +1,31 @@
+body {
+    background-color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+/* Form Styling */
+.form-container {
+    width: 350px;
+    background-color: #2b98c4;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px black;
+}
+
+/* Animation Class */
+.animate-form {
+    animation: slideRight 5s ease-out forwards;
+}
+
+/* Keyframes */
+@keyframes slideRight {
+    from {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        margin: 50px auto;
+    }
+}
