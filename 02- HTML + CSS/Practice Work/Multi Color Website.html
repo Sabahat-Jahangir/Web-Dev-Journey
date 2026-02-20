@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi Color Website</title>
+    <style>
+        :root{
+            --primary-color: #cea1f8;
+            --text-color:white;
+            --secondary-color:rgb(242, 222, 253);
+
+        }
+        body{
+            background-color: var(--secondary-color);
+        }
+        nav{
+            background-color: var(--primary-color);
+            padding: 12px 0px;
+        }
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: 400;
+            color:var(--text-color)
+        }
+        ul li a{
+            color:var(--text-color);
+            text-decoration:none
+        }
+
+    </style>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</li></a>
+                <li><a href="#">About</li></a>
+                <li><a href="#">Services</li></a>
+                <li><a href="#">Contact Us</li></a>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
