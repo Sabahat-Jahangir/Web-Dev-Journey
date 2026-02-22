@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit and Object-cover</title>
+    <style>
+        .container{
+            height: 434px;
+            width: 483px;
+            border: 5px solid;
+            background-color: azure;
+        }
+        img{
+            height: 434px;
+            width: 483px;
+            /* object-fit: cover; */
+            object-fit: fill;
+            object-position: bottom right;
+            /* object-fit: contain; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../Projects/Beauty in Disorder (Art Gallery) - HTML/pics/image1.png" alt="">
+    </div>
+</body>
+</html>
