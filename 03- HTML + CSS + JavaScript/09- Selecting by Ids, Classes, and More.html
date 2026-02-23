@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting by Ids, Classes, and More</title>
+    <style>
+        .box{
+            height: 45px;
+            width: 56px;
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid Black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hello World</div>
+        <div class="box">Hello World</div>
+        <div class="box">Hello World</div>
+        <div class="box">Hello World</div>
+        <div class="box">Hello World</div>
+    </div>
+    <script>
+        console.log("Hello......")
+        let helloworld = document.getElementsByClassName("box")
+    </script>
+</body>
+</html>

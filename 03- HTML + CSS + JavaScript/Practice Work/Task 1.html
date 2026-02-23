@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+
+    <h2>Arithmetic Operations Using JavaScript</h2>
+
+    <form>
+        <label>Enter First Number:</label>
+        <input type="number" id="num1"><br><br>
+
+        <label>Enter Second Number:</label>
+        <input type="number" id="num2"><br><br>
+
+        <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+
+    <h3>Results:</h3>
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+
+    <script>
+        function calculate() {
+            var a = Number(document.getElementById("num1").value);
+            var b = Number(document.getElementById("num2").value);
+
+            document.getElementById("add").innerHTML = "Addition: " + (a + b);
+            document.getElementById("sub").innerHTML = "Subtraction: " + (a - b);
+            document.getElementById("mul").innerHTML = "Multiplication: " + (a * b);
+            document.getElementById("div").innerHTML = "Division: " + (a / b);
+        }
+    </script>
+
+</body>
+</html>
