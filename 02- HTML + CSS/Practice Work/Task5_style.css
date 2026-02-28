@@ -29,3 +29,33 @@ body {
         margin: 50px auto;
     }
 }
+
+/* Define the animation */
+@keyframes myAnimation {
+    0% {
+        transform: translateX(0);
+        background-color: red;
+    }
+    50% {
+        transform: translateX(100px);
+        background-color: yellow;
+    }
+    100% {
+        transform: translateX(0);
+        background-color: red;
+    }
+}
+
+/* Apply the animation to an element */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+
+    /* Animation properties */
+    animation-name: myAnimation;      /* Name of @keyframes */
+    animation-duration: 4s;           /* Total time for one cycle */
+    animation-timing-function: linear;/* Speed curve */
+    animation-iteration-count: infinite; /* Repeat forever */
+}

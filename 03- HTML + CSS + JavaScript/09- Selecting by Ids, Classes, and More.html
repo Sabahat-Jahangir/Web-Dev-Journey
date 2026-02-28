@@ -19,12 +19,30 @@
         <div class="box">Hello World</div>
         <div class="box">Hello World</div>
         <div class="box">Hello World</div>
+        <div id="redbox" class="box">Hello World</div>
         <div class="box">Hello World</div>
         <div class="box">Hello World</div>
     </div>
     <script>
-        console.log("Hello......")
-        let helloworld = document.getElementsByClassName("box")
+        // console.log("Hello......")
+        // let helloworld = document.getElementsByClassName("box")
+        // console.log(helloworld);
+        // helloworld[3].style.backgroundColor = "red";
+
+
+        // document.getElementById("redbox").style.backgroundColor = "red";
+
+         // document.querySelector('.box').style.backgroundColor = "green";
+
+        // You cannot use queryselectorall without loop
+        // document.querySelectorAll('.box').style.backgroundColor = "green";
+       
+        document.querySelectorAll('.box').forEach(e => {
+            e.style.backgroundColor = "red";
+        })
+
+
+
     </script>
 </body>
 </html>
